@@ -1,0 +1,40 @@
+<html>
+<head></head>
+<title<Student Registration</title>
+<body>
+<style>
+.error {color: #FF0000;}
+</style>
+
+<form method="post" action="phpform_validation.php" >
+<h1 style="text-align:center"><u>STUDENT REGISTRATION FORM</u></h1>
+<table align="center">
+<tr>
+<td>Student ID</td>
+<td>:</td>
+<td><input type="text" name="sid"><span class="error">*<?php echo $iderror; echo 
+$iderror1;?></span></td></tr>
+<tr>
+<td>Name of Student</td>
+<td>:</td>
+<td><input type="text" name="name"><span class="error">*<?php echo 
+$nameerror; ?></span></td></tr>
+<tr>
+<td>BRANCH</td>
+<td>:</td>
+<td><input type="text" name="branch"><span class="error">*<?php echo 
+$brancherror; ?></span></td></tr>
+<tr>
+<td>MARKS OBTAINED</td>
+<td>:</td>
+<td><input type="text" name="mark"><span class="error">*<?php echo $markerror;echo 
+$markerror1; ?></span></td></tr>
+<tr>
+<td>&nbsp;</td></tr>
+<tr>
+<td colspan="2" style="text-align:right"><input type="submit" value="submit" 
+name="submit"></td></tr>
+</table>
+</form>
+</body>
+</html>
