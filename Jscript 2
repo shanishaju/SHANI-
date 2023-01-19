@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type="text/javascript">
+function sayHellow()
+{
+alert("Hellow World")
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="sayHellow()" value="Say Hellow"/>
+</body>
+</html>

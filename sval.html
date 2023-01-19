@@ -1,4 +1,5 @@
-                                                                                                                                                                  <html>
+<!DOCTYPE html>
+<html>
 <head>
 <style>
 body{
@@ -78,33 +79,7 @@ type="submit" name="submit" value="REGISTER"></td>
 <script>
 function validateform(){ 
 var f=document.myform.fname.value; 
-var l=document.myform.lname.value; 
-var x=document.myform.email.value;
-var atposition=x.indexOf("@"); 
-var dotposition=x.lastIndexOf("."); 
-if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){ 
-alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition); 
-return false; 
-} 
-var ph=document.myform.phone.value;
-if (isNaN(ph)){ 
-document.getElementById("numloc").innerHTML="enter numeric value only"; 
-return false; 
-}
-else{ 
-return true; 
-} 
-var u=document.myform.username.value;
-var p=document.myform.password.value;
-var lw = /[a-z]/g;
-var uw = /[A-Z]/g;
-var n = /[0-9]/g;
-if (p.value.match(lw) || p.value.match(uw)|| p.value.match(n) || p.value.length >= 8 ) {
-alert("Please enter a valid password");
+if(f==" ")
+{
+alert("please eneter the name")
 return false;
-}
-}
-</script>-->
-</center>
-</body>
-</html>

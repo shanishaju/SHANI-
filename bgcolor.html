@@ -1,13 +1,14 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
-body {
-background-color : yellow;
+body 
+{
+background-color : blue;
 }
-.button {
-background-color: #343deb;
-color: white;
+.button 
+{
+background-color: white;
+color: pink;
 padding: 15px 40px;
 text-align: center;
 display: inline-block;
@@ -17,10 +18,12 @@ font-size: 20px;
 </head>
 <body>
 <center><br>
-<h2><font color="white" size="9">Click here To change Background Color</h2>
-<button class="button" onclick="backgroundchange('#181a40')">Press the Button</button>
+<h2><font color="yellow" size="9"><i>Click Here To Change Background Color</h2>
+<button class="button" onclick="backgroundchange('pink')"><i>Press the Button1</button>
+<button class="button" onclick="backgroundchange('powderblue')"><i>Press the Button2</button>
 <script>
-function backgroundchange(color) {
+function backgroundchange(color) 
+{
  document.body.style.background = color;
 }
 </script>
